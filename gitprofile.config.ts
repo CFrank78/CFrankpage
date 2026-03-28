@@ -1,10 +1,8 @@
 // gitprofile.config.ts
 
-// gitprofile.config.ts
-
 const config = {
   github: {
-    username: 'CFrank78', // Tu usuario de GitHub
+    username: 'CFrank78',
     sortBy: 'stars',
     limit: 10,
     exclude: {
@@ -13,7 +11,7 @@ const config = {
     },
   },
   social: {
-    linkedin: '', // Pon aquí tu usuario de LinkedIn cuando lo tengas
+    linkedin: '',
     twitter: '',
     mastodon: '',
     researchGate: '',
@@ -27,16 +25,15 @@ const config = {
     behance: '',
     medium: '',
     dev: '',
-    stackoverflow: '', // Ejemplo: '1/john-doe'
+    stackoverflow: '',
     skype: '',
     telegram: '',
     website: '',
     phone: '',
-    email: '', // Agrega tu correo electrónico aquí
+    email: '',
   },
   resume: {
-    fileUrl:
-      '', // Si subes el PDF de tu Awesome CV a Google Drive, puedes pegar el link aquí
+    fileUrl: '',
   },
   skills: [
     'C#',
@@ -47,10 +44,10 @@ const config = {
     'Desarrollo Backend',
     'Bases de Datos Relacionales',
     'Normalización de BD',
+    'DevOps',
+    'Unity',
   ],
-  experiences: [
-    // Se deja en blanco ya que destacaremos tus proyectos académicos y personales
-  ],
+  experiences: [],
   certifications: [
     {
       name: 'Administración y Normalización Avanzada de Base de Datos',
@@ -68,25 +65,65 @@ const config = {
     },
   ],
   publications: [],
-  // Aquí agregamos los proyectos que no necesariamente están como repositorios públicos aún
-  externalProjects: [
-    {
-      title: 'Sistema de Facturación para Benjamín Hill',
-      description:
-        'Proyecto académico individual. Diseño y desarrollo integral de un sistema de facturación desde cero con C#. Modelado y administración de base de datos relacional en SQL Server para gestionar transacciones y clientes de manera segura.',
-      imageUrl: '',
-      link: '', // Si luego subes este código a un repo público, pon el link aquí
+  blog: {
+    source: 'dev',
+    username: '',
+    limit: 2,
+  },
+  googleAnalytics: {
+    id: '',
+  },
+  hotjar: {
+    id: '',
+    snippetVersion: 6,
+  },
+  
+  // --- SECCIÓN DE PROYECTOS ACTUALIZADA ---
+  projects: {
+    github: {
+      display: true,
+      header: 'Proyectos en GitHub',
+      mode: 'manual',
+      automatic: {
+        sortBy: 'stars',
+        limit: 8,
+        exclude: {
+          forks: false,
+          projects: [],
+        },
+      },
+      manual: {
+        projects: ['CFrank78/sistemaFacturaUsuario'], 
+      },
     },
-  ],
-  // Configuración de SEO y tema de la página
+    external: {
+      header: 'Más sobre mis proyectos',
+      projects: [
+        {
+          title: 'Sistema de Facturación para Benjamín Hill',
+          description:
+            'Diseño y desarrollo integral de un sistema de facturación desde cero con C#. Modelado y administración de base de datos relacional en SQL Server para gestionar transacciones y clientes de manera segura.',
+          imageUrl:
+            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          link: 'https://github.com/CFrank78/sistemaFacturaUsuario',
+        },
+        {
+          title: 'Desarrollo de Videojuego Independiente',
+          description:
+            'Proyecto colaborativo. Desarrollo de mecánicas y lógica de juego utilizando C# y Unity, aplicando diseño de código orientado a objetos para un rendimiento óptimo.',
+          imageUrl:
+            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          link: '',
+        },
+      ],
+    },
+  },
+  // ----------------------------------------
+
   seo: {
     title: 'Portafolio de Frank | Backend Developer',
     description: 'Portafolio de desarrollo de software de Frank, estudiante de la UNISON enfocado en Backend y Bases de Datos.',
     imageURL: '',
-  },
-  socialMedia: {
-    facebook: '',
-    twitter: '',
   },
   themeConfig: {
     defaultTheme: 'lofi',
@@ -94,39 +131,11 @@ const config = {
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
     themes: [
-      'light',
-      'dark',
-      'cupcake',
-      'bumblebee',
-      'emerald',
-      'corporate',
-      'synthwave',
-      'retro',
-      'cyberpunk',
-      'valentine',
-      'halloween',
-      'garden',
-      'forest',
-      'aqua',
-      'lofi',
-      'pastel',
-      'fantasy',
-      'wireframe',
-      'black',
-      'luxury',
-      'dracula',
-      'cmyk',
-      'autumn',
-      'business',
-      'acid',
-      'lemonade',
-      'night',
-      'coffee',
-      'winter',
-      'dim',
-      'nord',
-      'sunset',
-      'procyon',
+      'light', 'dark', 'cupcake', 'bumblebee', 'emerald', 'corporate',
+      'synthwave', 'retro', 'cyberpunk', 'valentine', 'halloween', 'garden',
+      'forest', 'aqua', 'lofi', 'pastel', 'fantasy', 'wireframe', 'black',
+      'luxury', 'dracula', 'cmyk', 'autumn', 'business', 'acid', 'lemonade',
+      'night', 'coffee', 'winter', 'dim', 'nord', 'sunset', 'procyon',
     ],
     customTheme: {
       primary: '#fc055b',
