@@ -1,5 +1,5 @@
 // gitprofile.config.ts
-
+ 
 const config = {
   github: {
     username: 'CFrank78',
